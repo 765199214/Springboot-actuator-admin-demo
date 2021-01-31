@@ -1,0 +1,5 @@
+server:
+  port: 8000
+  
+#spring:#  boot:#    admin:#      ui:#        title: 监控测试server
+#        brand: <span>Service Monitoring Center</span>

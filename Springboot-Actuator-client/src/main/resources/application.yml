@@ -1,0 +1,10 @@
+server:
+  port: 80
+  
+spring:  boot:    admin:      client:        url: http://localhost:8000  ## 监控信息推送admin server
+  
+management:  server:    port: 8889 ##管理端口调整为 8889，独立的端口可以作安全控制
+  endpoints:    web:      base-path: /xiangjiao ## actuator的访问路径(修改访问路径，2.0之前默认是/，2.0默认是/actuator)
+      exposure:        include: '*' #开放所有页面节点  默认只开启了health、info两个节点
+        #exclude: 'env' #公开中的所有端点，除去 env
+  endpoint:    health:      show-details: always
